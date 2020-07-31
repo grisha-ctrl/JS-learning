@@ -1,5 +1,20 @@
-// git log просмотр сохранений
-// git add <file>... to update what will be commited
-// git checkout -- <file>... to discard changes in working directory
-// git add -A добавить все файлы
-// git commit -a -m"..." сохранение + пометка что изменилось    
+//создание переменной (var/const)
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privet: false
+};
+
+const a = prompt("Один из последних просмотренных фильмов?", ""),
+      b = prompt("На сколько оцените его?", ""),
+      c = prompt("Один из последних просмотренных фильмов?", ""),
+      d = prompt("На сколько оцените его?", "");
+      
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
