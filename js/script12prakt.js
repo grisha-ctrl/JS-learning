@@ -1,4 +1,4 @@
-//создание переменной (var/const)
+//создание переменной (let/var/const)
 const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
 const personalMovieDB = {
